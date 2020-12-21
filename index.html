@@ -1,0 +1,32 @@
+---
+layout: home
+title:
+sitemap:
+  priority: 0.9
+---
+
+<h2>Projects</h2>
+
+<section>
+{% for project in site.projects limit 5 %}
+    <article>
+        <a href="{{ project.url | prepend: site.baseurl }}">
+            <h3>{{ project.title }}</h3>
+            <p class="subtitle">{{ project.subtitle }}</p>
+        </a>
+    </article>
+{% endfor %}
+</section>
+
+<h2>Blog</h2>
+
+<section>
+{% for post in site.posts limit 3 %}
+    <article>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h3>{{ post.title }}</h3>
+            <p class="subtitle">{{ post.date | date: "%Y %B %d" }}</p>
+        </a>
+    </article>
+{% endfor %}
+</section>

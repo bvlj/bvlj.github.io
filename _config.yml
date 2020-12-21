@@ -1,0 +1,20 @@
+title: bvlj
+
+baseurl: ""
+url: "https://bvlj.github.io"
+
+author:
+  github: bvlj
+  email: [
+    bevilacquajoey@gmail.com,
+    bevilj@usi.ch,
+    joey@lineageos.org,
+    jbevilacqua@shiftphones.com
+  ]
+  lineage:
+    email: joey%2540lineageos.org
+    name: jrizzoli
+
+collections:
+  projects:
+    output: true
